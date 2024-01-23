@@ -1,4 +1,4 @@
-const express = requere('express');
+const express = require('express');
 const app = express();
 
 app.use(express.json());
@@ -18,7 +18,7 @@ app.get('/', (req , res) =>{
     ${usuarios.map(
         (usuario) => `<li>ID: ${usuario.nombre} | Edad: ${usuario.edad} | Lugar de procedencia: ${usuario.lugarProcedencia}</li>`
     )
-    .join()}
+    .join('')}
     `)
 })
 
