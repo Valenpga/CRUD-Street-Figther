@@ -1,0 +1,36 @@
+GET http://localhost:3000/usuarios
+
+###
+
+POST http://localhost:3000/usuarios
+Content-Type: : application/json
+
+{
+    "nombre": "Data",
+    "edad": "28",
+    "lugarProcedencia": "España"
+
+}
+
+###
+
+GET http://localhost:3000/usuarios/Ryu
+
+
+###
+
+PUT http://localhost:3000/usuarios/Chun-li
+Content-Type: application/json
+{
+    "nombre": "Data",
+    "edad": "28",
+    "lugarProcedencia": "España"
+
+}
+
+###
+
+DELETE http://localhost:3000/usuarios/Blanka
+
+
+
